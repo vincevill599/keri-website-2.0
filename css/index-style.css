@@ -304,7 +304,7 @@ header {
 /* top */
 
 .top {
-    background-image: url('../assets/boss.jpg');
+    background-image: url("../assets/boss.jpg");
     background-size: cover;
     background-position: 0 45%;
     background-repeat: no-repeat;
@@ -777,7 +777,7 @@ header {
 /* footer */
 
 .footer-section {
-    background-image: url('../assets/login_background.png');
+    background-image: url("../assets/login_background.png");
     background-size: cover;
     background-position: 0 55%;
     background-repeat: no-repeat;
