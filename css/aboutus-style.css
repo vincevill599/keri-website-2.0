@@ -1,0 +1,251 @@
+
+/* Extra Small Devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+    
+  }
+  
+  /* Small Devices (landscape phones, 576px and up) */
+  @media screen and (min-width: 576px) and (max-width: 767.98px) {
+    
+  }
+  
+  /* Medium Devices (tablets, 768px and up) */
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+  }
+  
+  /* Large Devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  }
+  
+  /* Extra Large Devices (large desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+  }
+  
+/* about title banner start */
+
+.about-title {
+    height: 85vh;
+    position: relative;
+}
+
+.about-title_row {
+    height: 100%;
+}
+
+.about-title_col {
+
+}
+
+.about-title_col_left {
+    background-color: #a11b1f;
+    position: relative;
+    padding: 2vh 9vw;
+}
+
+.about-title_col_right {
+    background-image: url("../assets/gallery/1.jpg");
+    background-size: cover;
+    background-position-x: 25%;
+}
+
+#header {
+    z-index: 999;
+}
+
+.about-title_main {
+    font-size: 60pt;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 998;
+    font-family: 'Oswald', sans-serif !important;
+    text-shadow: 4px 4px 0px rgb(233, 62, 62);
+}
+
+.about-title_subtitle {
+    margin-top: 2vh;
+    padding-left: 1vw;
+    font-size: 16pt;
+    color: #fff;
+    z-index: 998;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.you {
+    text-shadow: 1px 2px 0px rgb(233, 62, 62);
+    font-weight: bolder;
+}
+
+.about-overlay {
+    height: 100%;
+    width: 100%;
+    z-index: 997;
+    background-color:#2002037c;
+    position: absolute;
+}
+
+/* about title banner end */
+
+/* about main start */
+
+.about-main {
+    padding: 10vh 10vw;
+    background-color: #d8d8d8;
+}
+
+.about-main-row {
+
+}
+
+.about-main-title-col {
+    margin-bottom: 4vh;
+}
+
+.about-main-subtitle-col {
+    margin-bottom: 6vh;
+}
+
+.about-main-title-main {
+    font-size: 30pt;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif !important;
+    color: #000000c4;
+}
+
+.about-main-title-sub {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.about-stat {
+
+}
+
+.stat-cont {
+    background-color: #eceaea;
+    width: 100%;
+    height: 20vh;
+    border-radius: 24px;
+    margin: 2vh 0;
+
+    font-size: 18pt;
+    line-height: 55px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.stat-count {
+    font-size: 32pt;
+    font-weight: bolder;
+    font-family: 'Bebas Neue', sans-serif !important;
+}
+
+.stat-row {
+    padding: 0 20vw;
+}
+
+/* about main end */
+
+/* team start */
+
+.team {
+    padding: 10vh 10vw;
+    background-color: #fff;
+    position: relative;
+}
+
+.team-title {
+
+}
+
+.team-row {
+    background-color: rgb(245, 245, 245);
+    padding: 0 5vw;
+    border-radius: 18px;
+}
+
+.team-title span {
+    font-size: 30pt;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif !important;
+    color: #a11b1f;
+    text-shadow: 4px 4px 0px rgba(247, 229, 68, 0.514);
+}
+
+.team-item-left {
+    background-color:#140600;
+    margin: 18vh 0 3vh 0;
+    height: 35vh;
+    overflow: visible;
+    position: relative;
+    border-radius: 18px;
+    padding: 4.5vh 4vw 4.5vh 30%;
+    color: #fff;
+    line-height: 40px;
+}
+
+.team-item-right {
+    background-color:#630f11;
+    margin: 18vh 0 2vh 0;
+    height: 35vh;
+    overflow: visible;
+    position: relative;
+    border-radius: 18px;
+    padding: 4.5vh 30% 4.5vh 4vw;
+    color: #fff;
+    line-height: 40px;
+}
+
+.team-img-left {
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+}
+
+.team-img-right{
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+}
+
+.name {
+    font-size: 32pt;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-weight: bold;
+}
+
+.role {
+    margin-left: 12px;
+    font-size: 16pt;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.description {
+    font-size: 14pt;
+    line-height: 25px;
+    margin-top: 2vh;
+}
+
+.bg-skyline {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    opacity: 5%;
+}
+
+.bg-skyline2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    opacity: 3%;
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
+
+/* team end */
