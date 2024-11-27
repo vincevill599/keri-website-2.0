@@ -1,7 +1,66 @@
 
 /* Extra Small Devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px) {
-    
+    .about-title_col {
+        padding: 15vh 15vw 10vh 15vw!important;
+    }
+
+    .about-title {
+        height: fit-content !important;
+    }
+
+    .about-title_main {
+        font-size: 56pt !important;
+    }
+
+    .about-title_subtitle {
+        font-size: 14pt !important;
+    }
+
+    .about-title_col_right {
+        display: none;
+    }
+
+    .about-main-title-main {
+        font-size: 25pt !important;
+    }
+
+    .about-main-title-sub {
+        font-size: 14pt !important;
+    }
+
+    .stat-row {
+        padding: 0 10vw !important;
+    }
+
+    .team-img-left,
+    .team-img-right {
+        display: none;
+    }
+
+    .team-item-left,
+    .team-item-right {
+        padding: 3vh 10vw !important;
+    }
+
+    .name {
+        font-size: 30pt !important;
+    }
+
+    .description {
+        font-size: 11pt !important;
+        margin-top: 1vh !important;
+    }
+
+    .team-item-left,
+    .team-item-right {
+        height: fit-content !important;
+        margin: 8vh 0 0 0 !important;
+    }
+
+    .atty {
+        margin-bottom: 8vh !important;
+    }
   }
   
   /* Small Devices (landscape phones, 576px and up) */
@@ -19,6 +78,15 @@
   
   /* Extra Large Devices (large desktops, 1200px and up) */
   @media screen and (min-width: 1200px) {
+    .team-item-left,
+    .team-item-right {
+        height: fit-content !important;
+    }
+
+    .stat-cont {
+        padding: 2vh !important;
+        height: fit-content !important;
+    }
   }
   
 /* about title banner start */
