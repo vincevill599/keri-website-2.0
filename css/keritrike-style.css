@@ -87,6 +87,14 @@
         padding: 2vh !important;
         height: fit-content !important;
     }
+
+    .keritrike-desc {
+        font-size: 20pt !important;
+    }
+    
+    .keritrike-desc ul li {
+        font-size: 15pt !important;
+    }
   }
   
 /* about title banner start */
