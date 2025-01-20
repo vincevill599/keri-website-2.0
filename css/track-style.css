@@ -1,0 +1,184 @@
+/* Track your Package UPDATE */
+.statusButton {
+    background-color: #a11b1f;
+    color: #fff;
+    height: 6vh !important;
+    width: 10vmax;
+    font-size: 1em;
+    margin-left: 1.5vw;
+}
+
+.statusButton:hover {
+    color: goldenrod;
+}
+
+#trackingInput {
+    width: 90%;
+}
+
+#trackingInput,
+#trackingInput:focus {
+    border: 0;
+    outline: 0;
+}
+
+.input-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container {
+    border: 2px solid #CCCCCC;
+    border-radius: 6px;
+    padding: 8px;
+    width: 20vmax;
+    display: flex;
+    justify-content: space-between;
+    height: 6vh;
+    font-size: 1.25em;
+}
+
+.input-container button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    padding: 0;
+    z-index: 2;
+}
+
+.timeline {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    width: calc(100% / 7);
+}
+
+.li {
+    transition: all 200ms ease-in;
+}
+
+.status {
+    padding: 0px 0px;
+    /* display: flex; */
+    /* justify-content: center; */
+    border-top: 2px solid #D6DCE0;
+    position: relative;
+    transition: all 200ms ease-in;
+    margin-top: 10px;
+}
+
+.status h4 {
+    margin-top: 20px;
+    font-size: 0.85vmax;
+    font-weight: 600;
+    height: 100px;
+    text-align: center;
+}
+
+.dot {
+    height: 0.9vmax;
+    width: 0.9vmax;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -0.5vmax;
+    left: 45%;
+}
+
+.li.complete .status .dot {
+    background-color: #30664a;
+}
+
+.li.complete .status {
+    border-top: 2px solid #30664a;
+}
+
+.li.complete .status:before {
+    background-color: #30664a;
+    border: none;
+    transition: all 200ms ease-in;
+}
+
+.li.complete .status h4 {
+    color: #30664a;
+}
+
+.label-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.status-container,
+.trackingId-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 14px 0;
+    font-size: 15pt;
+}
+
+.status-label,
+.trackingId-label {
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.close:focus,
+.btn:focus {
+    outline: 0;
+}
+
+.track {
+    height: 100vh;
+    width: 100vw;
+    padding: 18vh 6vw 0 6vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #661215;
+}
+
+.track-row {
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 100%
+}
+
+.track-title span {
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 8vh;
+    font-size: 45pt;
+}
+
+.timeline-container {
+    padding: 0 5vw;
+}
+
+@media screen and (max-width: 575.98px) {
+    .statusButton {
+        font-size: .7em;
+    }
+ }
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {}

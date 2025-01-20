@@ -119,9 +119,10 @@
 }
 
 .about-title_col_right {
-    background-image: url("../assets/trike.jpg");
+    background-image: url("../assets/Trikebg2.jpg");
     background-size: cover;
     background-position-x: 60%;
+    background-position-y: 50%;
 }
 
 #header {

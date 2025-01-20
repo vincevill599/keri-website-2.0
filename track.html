@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keri Delivery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/track-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Montserrat&family=Oswald&family=Roboto&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav -->
+
+    <header id="header">
+        <a class="header-logo" href="index.html">
+            <img src="assets/keri-logo_white.png" class="header-logo_image" id="logo">
+        </a>
+
+        <ul class="nav">
+            <li class="nav-link ">
+                <a href="about-us.html" class="hover-underline-animation">
+                    ABOUT US
+                </a>
+            </li>
+            <li class="nav-link ">
+                <a href="keritrike.html" class="hover-underline-animation">
+                    KERITRIKE
+                </a>
+            </li>
+            <!-- <li class="nav-link">
+                <a href="business.html" class="hover-underline-animation">
+                    BUSINESS
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="faqs.html" class="hover-underline-animation">
+                    RIDERS
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#contact" class="hover-underline-animation">
+                    NEWS & BLOGS
+                </a>
+            </li> -->
+            <li class="nav-link">
+                <a href="track.html" class="hover-underline-animation">
+                    TRACK YOUR PACKAGE
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="https://www.kerilex.com" class="hover-underline-animation">
+                    KERI LEX
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="#contact" class="hover-underline-animation">
+                    BOOK NOW
+                </a>
+            </li>
+        </ul>
+
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <!-- track main -->
+
+    <section class="track">
+        <div class="track-row row">
+            <div class="col-12 track-title d-flex justify-content-center align-items-start">
+                <span>Keri City Delivery Tracker</span>
+            </div>
+
+            <div class="input-main">
+                <div class="input-container">
+                    <input id="trackingInput" type="text" placeholder="Enter your Tracking ID">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <button type="button"  onclick="fetchData()" class="btn statusButton">Get Status</button>
+            </div>
+    
+                <div class="label-container">
+                    <div class="status-container">
+                        <span class="status-label">Request Status: </span>
+                        <div id="status">--</div>
+                    </div>
+                </div>
+    
+                <div class="col-12">
+                    <div class="timeline-container">
+                        <ul class="timeline">
+                            <li class="li" id="pickUp">
+                                <div class="status">
+                                    <span class="dot"></span>
+                                    <h4>For Pick-up</h4>
+                                </div>
+                            </li>
+                            <li class="li" id="transitHall">
+                                <div class="status">
+                                    <span class="dot"></span>
+                                    <h4>In Transit</h4>
+                                </div>
+                            </li>
+                            <li class="li" id="verification">
+                                <div class="status">
+                                    <span class="dot"></span>
+                                    <h4>For Verification</h4>
+                                </div>
+                            </li>
+                            <li class="li" id="processing">
+                                <div class="status">
+                                    <span class="dot"></span>
+                                    <h4>Processing</h4>
+                                </div>
+                            </li>
+                            <li class="li" id="delivery">
+                                <div class="status">
+                                    <span class="dot"></span>
+                                    <h4>For Delivery</h4>
+                                </div>
+                            </li>
+                            <li class="li" id="transitClient">
+                                <div class="status">
+                                    <span class="dot"></span>
+                                    <h4>In Transit to Client</h4>
+                                </div>
+                            </li>
+                            <li class="li" id="delivered">
+                                <div class="status">
+                                    <span class="dot"></span>
+                                    <h4>Delivered</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- <section class="footer-section">
+        <div class="footer-overlay"></div>
+        <div class="footer-row row">
+            <div class="contact-footer col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex flex-column mb-3">
+                <span class="contact-title">
+                    Reach us here!
+                </span>
+
+                <span class="contact-subtitle">
+                    Mobile Numbers:
+                </span>
+
+                <span class="number">+63 928 684 5755</span>
+                <span class="number">+63 915 074 9362</span>
+
+                <span class="contact-subtitle">
+                    E-mails:
+                </span>
+
+                <span class="email">marketing@keridelivery.cc</span>
+                <span class="email">businessdev@keridelivery.cc</span>
+            </div>
+
+            <div class="link-footer col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                <div class="link-title">
+                    <span>Navigate Around</span>
+                </div>
+
+                <ul class="flex-column">
+                    <li class="nav-link ">
+                        <a href="services.html">
+                            ABOUT US
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="business.html">
+                            BUSINESS
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="faqs.html">
+                            RIDERS
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">
+                            NEWS & BLOGS
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">
+                            KERI LEX
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="soc-footer col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"></div>
+        </div>
+    </section> -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/index-script.js"></script>
+    <script src="js/aboutus-script.js"></script>
+    <script src="js/track-script.js"></script>
+</body>
+
+</html>
