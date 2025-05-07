@@ -609,6 +609,7 @@ header {
 
 .business-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 4% 0;
     max-width: 100%;
@@ -616,7 +617,7 @@ header {
 
 .card-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: start;
     flex-direction: column;
     padding: 0;
@@ -629,6 +630,7 @@ header {
 
 .business-card-image img {
     max-width: 100%;
+    min-height: 17vmax;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
