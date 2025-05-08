@@ -27,6 +27,7 @@
 
     .about-main-title-sub {
         font-size: 14pt !important;
+        padding: 0.5vh 5vw !important;
     }
 
     .stat-row {
