@@ -52,7 +52,7 @@ function fetchData() {
             if(data.status == "Delivered") {  currentStep = 6;  }
 
             document.querySelector('#status').innerHTML = `<span>${data.status}</span>` 
-            document.querySelector('#trackingId').innerHTML = `<span>${data.tracking_id}</span>` 
+            // document.querySelector('#trackingId').innerHTML = `<span>${data.tracking_id}</span>` 
             for(var i = currentStep; i < indicator.length && i > -1; i--) {
                 const currentStatus = indicator[i];
                 currentStatus.classList.add('complete');
